@@ -300,4 +300,4 @@ The script implements the following retention policy:
 
 ## License
 
-MIT License 
+GNU Public License
