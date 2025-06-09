@@ -1,0 +1,14 @@
+# Rclone Configuration for MinIO
+# This configuration is used to backup MinIO buckets
+# Replace the placeholder values with your actual MinIO credentials
+
+[minio]
+type = s3
+provider = Minio
+env_auth = false
+access_key_id = your-minio-access-key    # From your MinIO .env file
+secret_access_key = your-minio-secret-key  # From your MinIO .env file
+endpoint = http://localhost:9000          # Your MinIO endpoint
+region = us-east-1                        # Default region for MinIO
+acl = private                             # Access control level
+storage_class = STANDARD                  # Storage class for objects 
